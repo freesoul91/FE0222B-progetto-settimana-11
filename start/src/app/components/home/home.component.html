@@ -1,0 +1,22 @@
+
+
+<div class="container d-flex justify-content-center">
+
+  <div *ngFor="let prod of prodottiDaStamp; let i = index">
+    <app-product-card *ngIf="prod.id; else loading" [product]="prod" >
+
+    </app-product-card>
+  </div>
+
+</div>
+
+<ng-template #loading>
+  <div class="spinner-border" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+</ng-template>
+
+
+
+
+

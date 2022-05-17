@@ -1,53 +1,50 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule,Route} from '@angular/router';
 
-
+import { RouterModule, Route } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { CartComponent } from './cart/cart.component';
-import { DetailComponent } from "./detail/detail.component";
-import { ProductsComponent } from './products/products.component';
-import { HttpClientModule } from '@angular/common/http';
-import { ReactiveFormsModule,FormsModule } from '@angular/forms';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { HomeComponent } from './components/home/home.component';
+import { CarrelloComponent } from './components/carrello/carrello.component';
+import { ProductDetailsComponent } from './components/product-details/product-details.component';
+import { ProductCardComponent } from './components/product-card/product-card.component';
+import { FormsModule } from '@angular/forms';
 
-
-
-const routes : Route [] =[
+const routes: Route[] = [
   {
-    path:'',
-    component:ProductsComponent
-  },
-
-  {
-    path:'Cart',
-    component:CartComponent
+    path: '',
+    component: HomeComponent,
   },
   {
-    path:'detail/:id',
-    component:DetailComponent
+    path: 'carrello',
+    component: CarrelloComponent,
+  },
+  {
+    path: 'detail/:id',
+    component: ProductDetailsComponent,
   }
 
-]
+];
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    DetailComponent,
-    ProductsComponent,
-    CartComponent
-
+    HomeComponent,
+    CarrelloComponent,
+    ProductDetailsComponent,
+    ProductCardComponent
   ],
   imports: [
     BrowserModule,
-    HttpClientModule,
     RouterModule.forRoot(routes),
+    HttpClientModule,
     FormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
-export class AppRoutingModule { }
