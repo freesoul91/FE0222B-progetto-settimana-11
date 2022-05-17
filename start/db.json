@@ -2,27 +2,43 @@
   "products": [
     {
       "id": 1,
-      "name": "Phone XL",
+      "name": "Phone 13",
       "price": 799,
-      "description": "Uno dei migliori smartphone in commercio, con schermo ampio"
+      "description": "Un display superluminoso in un design robusto. Funzioni per filmare come a Hollywood, ma facilissime da usare. Un chip velocissimo. E una maggiore durata della batteria, che sfrutterai ogni giorno.",
+      "details":"Penta Band - 5G - Wi-Fi - NFC - GPS- Ceramic Shield - Display Super Retina XDR 6,1''.Resistente a gocce e schizzi. Doppia Fotocamera posteriore 12 MP.iOS 15 - Processore A15 Bionic.Memoria interna: 128 GB. Distribuito da APPLE Italia.",
+      "url":"https://asset.mediaw.it/wcsstore/MMCatalogAssetStore/asset/images/17/20/172081.jpg"
     },
     {
       "id": 2,
-      "name": "Phone Mini",
+      "name": "Phone 13 Mini",
       "price": 699,
-      "description": "Ha un'ottima fotocamera anche se piccolo"
+      "description": "Adesso, quando giri un video, puoi creare automaticamente splendidi effetti di profondità di campo e cambi di fuoco. Così ogni scena sarà ancora più avvincente.",
+      "details":"Penta Band - 5G - Wi-Fi - NFC - GPS Ceramic Shield - Display Super Retina XDR 5,4'' Resistente a gocce e schizzi - Modalita' Notte Doppia Fotocamera posteriore 12 MP - iOS 15 Processore A15 Bionic - Memoria interna: 512 GB Distribuito da APPLE Italia La confezione include iPhone e cavo da USB-C a Lightning. Puoi acquistare alimentatore e auricolari scegliendoli tra gli accessori proposti.",
+      "url":"https://asset.mediaw.it/wcsstore/MMCatalogAssetStore/asset/images/16/21/162173.jpg"
     },
     {
       "id": 3,
-      "name": "Phone Standard",
-      "price": 299,
-      "description": ""
+      "name": "iPhone 13 Pro",
+      "price": 1.189,
+      "description": "Nuovi strumenti per la tua creatività: ora puoi girare video con profondità di campo ridotta e spostamento automatico della messa a fuoco da un soggetto all’altro",
+      "details":"Display 6,1'' Super Retina XDR con ProMotion 120 Hz,Penta Band - 5G - Wi-Fi - NFC - GPS,Ceramic Shield - Acciaio inossidabile - Resistenza all'acqua IP68,Tripla fotocamera posteriore - Teleobiettivo, grandangolo e ultra-grandangolo,Smart HDR 4 - Video 4K a 60 fps,Processore: A15 Bionic - iOS 15,Memoria interna: 128 GB,Distribuito da APPLE Italia",
+      "url":"https://asset.mediaw.it/wcsstore/MMCatalogAssetStore/asset/images/16/22/162214.jpg"
     },
     {
-      "name": "OnePlus Nord",
-      "price": 500,
-      "description": "Il mio telefono",
-      "id": 4
+      "name": "iPgone 13 Pro Max",
+      "price": 1.359,
+      "description": "Super,Ultra,Pro.Un display Super Retina XDR con ProMotion, splendido e ultrareattivo.Un formidabile upgrade della fotocamera per darti più possibilità creative. Robustezza eccezionale. L’ultravelocità del chip A15 Bionic.",
+      "details":"Display 6,7'' Super Retina XDR con ProMotion 120 Hz,Penta Band - 5G - Wi-Fi - NFC - GPS,Ceramic Shield - Acciaio inossidabile - Resistenza all'acqua IP68,Tripla fotocamera posteriore,Teleobiettivo, grandangolo e ultra-grandangolo,Smart HDR 4 - Video 4K a 60 fps,Processore: A15 Bionic - iOS 15, Memoria interna: 128 GB,Distribuito da APPLE Italia",
+      "id": 4,
+      "url":"https://asset.mediaw.it/wcsstore/MMCatalogAssetStore/asset/images/16/22/162212.jpg"
+    },
+    {
+      "name": "NOKIA 3310",
+      "price": 49.999,
+      "description": "IMMORTALE",
+      "id": 5,
+      "details":"Il telefono è stato testato da noi manualmente, non sono stati rilevati difetti. Tutte le funzioni di base funzionano al perfetto come la sensibilità dei tasti, il microfono e l'altoparlante ecc.. Fornito con batteria originale che ha una ottima durata e caricabatterie sempre originale",
+      "url":"https://i.ebayimg.com/images/g/2isAAOSwKVFeymiu/s-l1600.jpg"
     }
   ],
   "prices": [

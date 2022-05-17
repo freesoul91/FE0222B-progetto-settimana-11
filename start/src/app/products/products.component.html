@@ -1,0 +1,17 @@
+<div class="container m-3">
+  <div class="row" *ngIf="productList">
+    <div class="col-3 mb-3" *ngFor="let product of productList; let i = index">
+      <div class="card h-100" style="width: 17rem;">
+        <img [src]="product.url" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{product.name}}</h5>
+          <p class="card-text">{{product.description}}</p>
+          <a class=" color-primary" [routerLink]="['./detail/',product.id]">Dettagli</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+</div>
