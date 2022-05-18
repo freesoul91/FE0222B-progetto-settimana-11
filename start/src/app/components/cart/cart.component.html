@@ -7,15 +7,14 @@
     <li routerLinkActive="active" class="list-group-item d-flex justify-content-between align-items-start"
       *ngFor="let prod of productsInCarrello; let i = index">
       <div class="ms-2 me-auto">
-        <div class="fw-bold">{{ prod.name }}</div>
-        € {{ prod.price }}
+        <div class="fw-bold text-info ">{{ prod.name }}</div>{{ prod.price }} €
       </div>
-      <span class="btn btn-primary my-auto" (click)="rimuoviProd(i)">Rimuovi dal carrello</span>
+      <span class="btn btn-danger my-auto fw-bold" (click)="rimuoviProd(i)">X</span>
     </li>
   </ol>
 
-  <div class="mt-2">
-    <span class=""> Tot. </span> <span>€ {{ totaleCarrello }}</span>
+  <div class="mt-2 text-dark fw-bold text-center fs-3">
+    <span class=""> Tot. </span > <span class="text-success fw-bold">€ {{ totaleCarrello }}</span>
   </div>
 
   <hr />
