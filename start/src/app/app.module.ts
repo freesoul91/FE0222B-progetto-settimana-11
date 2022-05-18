@@ -1,16 +1,15 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule } from '@angular/forms';
 import { RouterModule, Route } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
-import { CarrelloComponent } from './components/carrello/carrello.component';
-import { ProductDetailsComponent } from './components/product-details/product-details.component';
-import { ProductCardComponent } from './components/product-card/product-card.component';
-import { FormsModule } from '@angular/forms';
+import { CartComponent } from './components/cart/cart.component';
+import { DetailsComponent } from './components/details/details.component';
+
 
 const routes: Route[] = [
   {
@@ -18,14 +17,13 @@ const routes: Route[] = [
     component: HomeComponent,
   },
   {
-    path: 'carrello',
-    component: CarrelloComponent,
+    path: 'cart',
+    component: CartComponent,
   },
   {
     path: 'detail/:id',
-    component: ProductDetailsComponent,
-  }
-
+    component: DetailsComponent,
+  },
 ];
 
 @NgModule({
@@ -33,18 +31,16 @@ const routes: Route[] = [
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    CarrelloComponent,
-    ProductDetailsComponent,
-    ProductCardComponent
+    CartComponent,
+    DetailsComponent,
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(routes),
     HttpClientModule,
-    FormsModule
-
+    FormsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

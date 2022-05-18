@@ -1,108 +1,91 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Product } from '../models/product';
-
 import { Subject, throwError } from 'rxjs';
 import { catchError } from 'rxjs/operators';
-
 import { NgForm } from '@angular/forms';
 
-
-
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ProductsService {
-
   baseUrl = 'http://localhost:4201/';
-  baseUrlProduct = 'http://localhost:4201/products/'
+  baseUrlProduct = 'http://localhost:4201/products/';
 
-
-
-  public productsInCart: Product[] = []
-
-
+  public productsInCart: Product[] = [];
 
   sub = new Subject<number>();
 
   counter = 0;
 
+  constructor(private http: HttpClient) {}
 
-  constructor(private http: HttpClient) { }
-
-
-
-  get(){
-    return this.http.get<Product[]>(this.baseUrlProduct).pipe(catchError(err => {
-      return throwError(this.getErrorMess(err.status));
-    }))
+  get() {
+    return this.http.get<Product[]>(this.baseUrlProduct).pipe(
+      catchError((err) => {
+        return throwError(this.getErrorMess(err.status));
+      })
+    );
   }
 
-  getProduct(id: number){
-    return this.http.get<Product>(this.baseUrlProduct + id).pipe(catchError(err => {
-      return throwError(this.getErrorMess(err.status));
-    }))
+  getProduct(id: number) {
+    return this.http.get<Product>(this.baseUrlProduct + id).pipe(
+      catchError((err) => {
+        return throwError(this.getErrorMess(err.status));
+      })
+    );
   }
 
-
-
-  getProductsInCart(){
-    return this.productsInCart
+  getProductsInCart() {
+    return this.productsInCart;
   }
 
-  addProdInCart(prod: Product){
-    this.productsInCart.push(prod)
+  addProdInCart(prod: Product) {
+    this.productsInCart.push(prod);
   }
 
-  removeProdToCart(idProd: number){
-    this.productsInCart.splice(idProd,1)
-    this.contaMeno()
+  removeProdToCart(idProd: number) {
+    this.productsInCart.splice(idProd, 1);
+    this.contaMeno();
   }
 
-
-
-  conta(){
+  conta() {
     this.counter++;
     this.sub.next(this.counter);
   }
 
-  contaMeno(){
+  contaMeno() {
     this.counter--;
     this.sub.next(this.counter);
   }
 
-  azzerraConta(){
+  azzerraConta() {
     this.counter = 0;
     this.sub.next(this.counter);
   }
 
+  submit(form: NgForm) {
+    this.azzerraConta();
 
-
-  submit(form: NgForm){
-    this.azzerraConta()
-
-    console.log(`Grazie per il tuo ordine, ${form.value.nome} ${form.value.cognome}`)
+    console.log(
+      `Grazie per il tuo ordine, ${form.value.nome} ${form.value.email}`
+    );
     console.log(form.value);
-
   }
 
-
-
-  private getErrorMess(status:number){
+  private getErrorMess(status: number) {
     let mess = '';
-    switch (status){
+    switch (status) {
       case 404:
         mess = 'Risorsa non trovata';
         break;
-        case 500:
-          mess = 'Errore interno del server';
-          break;
-          default:
-            mess = 'Qualcosa non va';
-            break;
-          }
-          return mess
-        }
-
-
+      case 500:
+        mess = 'Errore interno del server';
+        break;
+      default:
+        mess = 'Qualcosa non va';
+        break;
+    }
+    return mess;
+  }
 }

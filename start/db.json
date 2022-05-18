@@ -19,14 +19,14 @@
     {
       "id": 3,
       "name": "iPhone 13 Pro",
-      "price": 1.189,
+      "price": 1189,
       "description": "Nuovi strumenti per la tua creatività: ora puoi girare video con profondità di campo ridotta e spostamento automatico della messa a fuoco da un soggetto all’altro",
       "details":"Display 6,1'' Super Retina XDR con ProMotion 120 Hz,Penta Band - 5G - Wi-Fi - NFC - GPS,Ceramic Shield - Acciaio inossidabile - Resistenza all'acqua IP68,Tripla fotocamera posteriore - Teleobiettivo, grandangolo e ultra-grandangolo,Smart HDR 4 - Video 4K a 60 fps,Processore: A15 Bionic - iOS 15,Memoria interna: 128 GB,Distribuito da APPLE Italia",
       "url":"https://asset.mediaw.it/wcsstore/MMCatalogAssetStore/asset/images/16/22/162214.jpg"
     },
     {
       "name": "iPgone 13 Pro Max",
-      "price": 1.359,
+      "price": 1359,
       "description": "Super,Ultra,Pro.Un display Super Retina XDR con ProMotion, splendido e ultrareattivo.Un formidabile upgrade della fotocamera per darti più possibilità creative. Robustezza eccezionale. L’ultravelocità del chip A15 Bionic.",
       "details":"Display 6,7'' Super Retina XDR con ProMotion 120 Hz,Penta Band - 5G - Wi-Fi - NFC - GPS,Ceramic Shield - Acciaio inossidabile - Resistenza all'acqua IP68,Tripla fotocamera posteriore,Teleobiettivo, grandangolo e ultra-grandangolo,Smart HDR 4 - Video 4K a 60 fps,Processore: A15 Bionic - iOS 15, Memoria interna: 128 GB,Distribuito da APPLE Italia",
       "id": 4,
@@ -34,7 +34,7 @@
     },
     {
       "name": "NOKIA 3310",
-      "price": 49.999,
+      "price": 49999,
       "description": "IMMORTALE",
       "id": 5,
       "details":"Il telefono è stato testato da noi manualmente, non sono stati rilevati difetti. Tutte le funzioni di base funzionano al perfetto come la sensibilità dei tasti, il microfono e l'altoparlante ecc.. Fornito con batteria originale che ha una ottima durata e caricabatterie sempre originale",
